@@ -8,175 +8,185 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-  body, h1,h2,h3,h4,h5,h6 
-  {
-    font-family: "Montserrat", sans-serif
-  }
-
-  .row-padding img 
-  {
-    margin-bottom: 12px
-  }
-
-  /* Set the width of the sidebar to 120px */
-  .sidebar 
-  {
-    width: 120px;
-    background: #2c3531;
-  }
-
-  /* Remove margins from "page content" on small screens */
-  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+    
+    .row-padding img {
+        margin-bottom: 12px
+    }
+    /* Set the width of the sidebar to 120px */
+    
+    .sidebar {
+        width: 120px;
+        background: #2c3531;
+    }
+    /* Remove margins from "page content" on small screens */
+    
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
 </style>
 
 <body class="black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="sidebar bar-block small hide-small center">
-  <img src="resources/images/boy.jpg" style="width:100%">
-  <a href="#about" class="bar-item button padding-large hover-black">
-    <i class="fa fa-user xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="1.html" class="bar-item button padding-large hover-black">
-    <i class="fa fa-eye xxlarge"></i>
-    <p>PHOTOGRAPHY</p>
-  </a>
-  <a href="photographer.html" class="bar-item button padding-large hover-black">
-    <i class="fa fa-address-card xxlarge"></i>
-    <p>CV</p>
-  </a>
-  <a href="survey.html" class="bar-item button padding-large hover-black">
-    <i class="fa fa-book xxlarge"></i>
-    <p>SURVEY</p>
-  </a>
-  <a href="https://www.linkedin.com/in/deelaka-wejith-kariyawasam-7a9bb0213/" class="bar-item button padding-large hover-black">
-    <i class="fa fa-linkedin xxlarge" aria-hidden="true"></i>
-    <p>LinkedIn</p>
-  </a>
-</nav>
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="sidebar bar-block small hide-small center">
+        <img src="resources/images/boy.jpg" style="width:100%">
+        <a href="#about" class="bar-item button padding-large hover-black">
+            <i class="fa fa-user xxlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="1.html" target="_blank" class="bar-item button padding-large hover-black">
+            <i class="fa fa-eye xxlarge"></i>
+            <p>PHOTOGRAPHY</p>
+        </a>
+        <a href="photographer.html" target="_blank" class="bar-item button padding-large hover-black">
+            <i class="fa fa-address-card xxlarge"></i>
+            <p>CV</p>
+        </a>
+        <a href="survey.html" class="bar-item button padding-large hover-black">
+            <i class="fa fa-book xxlarge"></i>
+            <p>SURVEY</p>
+        </a>
+        <a href="https://www.linkedin.com/in/deelaka-wejith-kariyawasam-7a9bb0213/" target="_blank" class="bar-item button padding-large hover-black">
+            <i class="fa fa-linkedin xxlarge" aria-hidden="true"></i>
+            <p>LinkedIn</p>
+        </a>
+    </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="top hide-large hide-medium">
-  <div class="bar black opacity hover-opacity-off center small">
-    <a href="#" class="bar-item button button" style="width:25% !important"><i class="fa fa-home">HOME</i></a>
-    <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="bar-item button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="container padding-32 center black" id="home">
-    <h1 class="jumbo"><span class="hide-small">I'm</span> Deelaka Wejith.</h1>
-    <p>Graphic and Web Designer.</p>
-    <p><i>"Life is like riding a bicycle. To keep your balance, you must keep moving"</i></p>
-    <img src="resources/images/boy.jpg" alt="boy" class="image" width="992" height="1108">
-  </header>
-
-  <!-- About Section -->
-  <div class="content justify text-grey padding-64" id="about">
-    <h2 class="text-light-grey">About me</h2>
-    <hr style="width:200px" class="opacity">
-    <p>My name is Deelaka Wejith Kariyawasam. I am an undergarduate student at OUSL. I'm intrested in graphic and web designing. I have a good knowledge of using photoshop, illustrator, premire pro, corel-draw and lightroom for create variety of quality logos, wallpapers, videos, photos, etc... Other thing is that I as a student i'm at a good level of my web developing skills. Also i completed two pearson assured diplomas which names are Diploma in Information technology and Diploma in English. So I hope you contact me.Here <a id="link1" href="photographer.html" style="color:lightblue;">my CV</a> link.
-    </p>  
-  </div>
-
-  <!-- Artwork Section -->
-  <div class="padding-64 content" id="photos">
-    <h2 class="text-light-grey">My Artworks</h2>
-    <hr style="width:200px" class="opacity">
-
-    <!-- Grid for photos -->
-    <div class="row-padding" style="margin:0 -16px">
-      <div class="half">
-        <img src="resources/images/best photos/13.jpg" style="width:100%">
-        <img src="resources/images/best photos/14.jpg" style="width:100%">
-        <img src="resources/images/best photos/Ai works/2.jpg" style="width:100%">
-        <img src="resources/images/best photos/login1.jpg" style="width:100%">
-        <img src="resources/images/best photos/TMA2-Q2-poster.jpg" style="width:100%">
-      </div>
-
-      <div class="half">
-        <img src="resources/images/best photos/Ai works/1.jpg" style="width:100%">
-        <img src="resources/images/best photos/Ai works/3.jpg" style="width:100%">
-        <img src="resources/images/best photos/1.jpeg" style="width:100%">
-        <img src="resources/images/best photos/login.jpg" style="width:100%">
-        <img src="resources/images/best photos/TMA2-tothpaste.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="top hide-large hide-medium">
+        <div class="bar black opacity hover-opacity-off center small">
+            <a href="#" class="bar-item button button" style="width:25% !important"><i class="fa fa-home">HOME</i></a>
+            <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
+            <a href="#photos" class="bar-item button" style="width:25% !important">PHOTOS</a>
+            <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
+        </div>
     </div>
-  <!-- End Artwork Section -->
-  </div>
 
-  <!-- Gallery Section -->
-  <div class="padding-64 content" id="photos">
-    <h2 class="text-light-grey">My Gallery</h2>
-    <hr style="width:200px" class="opacity">
+    <!-- Page Content -->
+    <div class="padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="container padding-32 center black" id="home">
+            <h1 class="jumbo"><span class="hide-small">I'm</span> Deelaka Wejith.</h1>
+            <p>Graphic and Web Designer.</p>
+            <p><i>"Life is like riding a bicycle. To keep your balance, you must keep moving"</i></p>
+            <img src="resources/images/boy.jpg" alt="boy" class="image" width="992" height="1108">
+        </header>
 
-    <!-- Grid for photos -->
-    <div class="row-padding" style="margin:0 -16px">
-      <div class="half">
-        <img src="resources/images/Gallery/1.jpg" style="width:100%">
-        <img src="resources/images/Gallery/2.jpg" style="width:100%">
-        <img src="resources/images/Gallery/3.jpg" style="width:100%">
-        <img src="resources/images/Gallery/4.jpg" style="width:100%">
-      </div>
+        <!-- About Section -->
+        <div class="content justify text-grey padding-64" id="about">
+            <h2 class="text-light-grey">About me</h2>
+            <hr style="width:200px" class="opacity">
+            <p>My name is Deelaka Wejith Kariyawasam. I am an undergarduate student at OUSL. I'm intrested in graphic and web designing. I have a good knowledge of using photoshop, illustrator, premire pro, corel-draw and lightroom for create variety of
+                quality logos, wallpapers, videos, photos, etc... Other thing is that I as a student i'm at a good level of my web developing skills. Also i completed two pearson assured diplomas which names are Diploma in Information technology and Diploma
+                in English. So I hope you contact me.Here <a id="link1" href="photographer.html" style="color:lightblue;">my CV</a> link.
+            </p>
+        </div>
 
-      <div class="half">
-        <img src="resources/images/Gallery/5.jpg" style="width:100%">
-        <img src="resources/images/Gallery/6.jpg" style="width:100%">
-        <img src="resources/images/Gallery/7.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Gallery Section -->
-  </div>
+        <!-- Artwork Section -->
+        <div class="padding-64 content" id="photos">
+            <h2 class="text-light-grey">My Artworks</h2>
+            <hr style="width:200px" class="opacity">
 
-  <!-- Contact Section -->
-  <div class="padding-64 content text-grey" id="contact">
-    <h2 class="text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="opacity">
+            <!-- Grid for photos -->
+            <div class="row-padding" style="margin:0 -16px">
+                <div class="half">
+                    <img src="resources/images/best photos/13.jpg" style="width:100%">
+                    <img src="resources/images/best photos/14.jpg" style="width:100%">
+                    <img src="resources/images/best photos/Ai works/2.jpg" style="width:100%">
+                    <img src="resources/images/best photos/login1.jpg" style="width:100%">
+                    <img src="resources/images/best photos/TMA2-Q2-poster.jpg" style="width:100%">
+                </div>
 
-    <div class="section">
-      <p><i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i> Colombo, Sri Lanka</p>
-      <p><i class="fa fa-phone fa-fw text-white xxlarge margin-right"></i> Phone: +94 705189754</p>
-      <p><i class="fa fa-whatsapp fa-fw text-white xxlarge margin-right"></i> WhatsApp: +94 705189754</p>
-      <p><i class="fa fa-envelope fa-fw text-white xxlarge margin-right"> </i> Email: deelakasphotography@Gmail.com</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
+                <div class="half">
+                    <img src="resources/images/best photos/Ai works/1.jpg" style="width:100%">
+                    <img src="resources/images/best photos/Ai works/3.jpg" style="width:100%">
+                    <img src="resources/images/best photos/1.jpeg" style="width:100%">
+                    <img src="resources/images/best photos/login.jpg" style="width:100%">
+                    <img src="resources/images/best photos/TMA2-tothpaste.jpg" style="width:100%">
+                </div>
+                <!-- End photo grid -->
+            </div>
+            <!-- End Artwork Section -->
+        </div>
 
-    <form method="post" action="contact-form-handler.php" accept-charset="ISO-8859-1" onsubmit="var   originalCharset = document.charset; document.charset = 'ISO-8859-1';
+        <!-- Gallery Section -->
+        <div class="padding-64 content" id="photos">
+            <h2 class="text-light-grey">My Gallery</h2>
+            <hr style="width:200px" class="opacity">
+
+            <!-- Grid for photos -->
+            <div class="row-padding" style="margin:0 -16px">
+                <div class="half">
+                    <img src="resources/images/Gallery/1.jpg" style="width:100%">
+                    <img src="resources/images/Gallery/2.jpg" style="width:100%">
+                    <img src="resources/images/Gallery/3.jpg" style="width:100%">
+                    <img src="resources/images/Gallery/4.jpg" style="width:100%">
+                </div>
+
+                <div class="half">
+                    <img src="resources/images/Gallery/5.jpg" style="width:100%">
+                    <img src="resources/images/Gallery/6.jpg" style="width:100%">
+                    <img src="resources/images/Gallery/7.jpg" style="width:100%">
+                </div>
+                <!-- End photo grid -->
+            </div>
+            <!-- End Gallery Section -->
+        </div>
+
+        <!-- Contact Section -->
+        <div class="padding-64 content text-grey" id="contact">
+            <h2 class="text-light-grey">Contact Me</h2>
+            <hr style="width:200px" class="opacity">
+
+            <div class="section">
+                <p><i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i> Colombo, Sri Lanka</p>
+                <p><i class="fa fa-phone fa-fw text-white xxlarge margin-right"></i> Phone: +94 705189754</p>
+                <p><i class="fa fa-whatsapp fa-fw text-white xxlarge margin-right"></i> WhatsApp: +94 705189754</p>
+                <p><i class="fa fa-envelope fa-fw text-white xxlarge margin-right"> </i> Email: deelakasphotography@Gmail.com</p>
+            </div><br>
+            <p>Let's get in touch. Send me a message:</p>
+
+            <form method="post" action="contact-form-handler.php" accept-charset="ISO-8859-1" onsubmit="var   originalCharset = document.charset; document.charset = 'ISO-8859-1';
   window.onbeforeunload = function (){document.charset=originalCharset;};">
-      <p><input class="input padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="input padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="input padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="input padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="button light-grey padding-large" type="submit">
+                <p><input class="input padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="input padding-16" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="input padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="input padding-16" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="button light-grey padding-large" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="content padding-64 text-grey xlarge">
-    <a href="https://www.facebook.com/deelaka.kariyawasam"><i class="fa fa-facebook-official hover-opacity"></i></a>
-    <a href="https://www.instagram.com/deelaka_m_p/"><i class="fa fa-instagram hover-opacity"></i></a>
-    <a href="https://www.instagram.com/deelaka_m_p/"><i class="fa fa-snapchat hover-opacity"></i></a>
-    <a href="https://www.pinterest.com/deelakasmobilephotography/"><i class="fa fa-pinterest-p hover-opacity"></i></a>
-    <a href="https://twitter.com/DeelakaWejith"><i class="fa fa-twitter hover-opacity"></i></a>
-    <a href="https://www.youtube.com/channel/UCudiMa7RXmvNij8vNmY3cug"><i class="fa fa-youtube hover-opacity"></i></a>
-    <p class="medium">Copyright ©Deelaka Wejith Kariyawasam 2021. All Rights Reserved</p>
-  <!-- End footer -->
-  </footer>
+                </p>
+            </form>
+            <!-- End Contact Section -->
+        </div>
 
-<!-- END PAGE CONTENT -->
-</div>
+        <!-- Footer -->
+        <footer class="content padding-64 text-grey xlarge">
+            <a href="https://www.facebook.com/deelaka.kariyawasam" target="_blank"><i class="fa fa-facebook-official hover-opacity"></i></a>
+            <a href="https://www.instagram.com/deelaka_m_p/" target="_blank"><i class="fa fa-instagram hover-opacity"></i></a>
+            <a href="https://www.instagram.com/deelaka_m_p/" target="_blank"><i class="fa fa-snapchat hover-opacity"></i></a>
+            <a href="https://www.pinterest.com/deelakasmobilephotography/" target="_blank"><i class="fa fa-pinterest-p hover-opacity"></i></a>
+            <a href="https://twitter.com/DeelakaWejith" target="_blank"><i class="fa fa-twitter hover-opacity"></i></a>
+            <a href="https://www.youtube.com/channel/UCudiMa7RXmvNij8vNmY3cug" target="_blank"><i class="fa fa-youtube hover-opacity"></i></a>
+            <p class="medium">Copyright ©Deelaka Wejith Kariyawasam 2021. All Rights Reserved</p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
 
 </body>
+
 </html>

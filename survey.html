@@ -1,160 +1,176 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>DeelakaWejith Official</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="survey.js"></script>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DeelakaWejith Official</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="survey.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <script type="text/javascript">
-  function display()
-  {
+    <script type="text/javascript">
+        function display() {
 
-    var bday = new Date(document.getElementById("in-bday").value);  
-    //calculate month difference from current date in time  
-    var month_diff = Date.now() - bday.getTime();  
-      
-    //convert the calculated difference in date format  
-    var age_dt = new Date(month_diff);   
-      
-    //extract year from date      
-    var year = age_dt.getUTCFullYear();  
-      
-    //now calculate the age of the user  
-    var age = Math.abs(year - 1970);  
-      
-    document.getElementById("name").innerHTML = document.getElementById("in-name").value;
-    document.getElementById("email").innerHTML = document.getElementById("in-email").value;
-    document.getElementById("bday").innerHTML = document.getElementById("in-bday").value ;
-    //display the calculated age  
-    document.getElementById("age").innerHTML = age;
-  }
-  </script>
+            var bday = new Date(document.getElementById("in-bday").value);
+            //calculate month difference from current date in time  
+            var month_diff = Date.now() - bday.getTime();
 
-  <style>
-    body, h1,h2,h3,h4,h5,h6 
-    {
-      font-family: "Montserrat", sans-serif
-    }
+            //convert the calculated difference in date format  
+            var age_dt = new Date(month_diff);
 
-    .row-padding img 
-    {
-      margin-bottom: 12px
-    }
+            //extract year from date      
+            var year = age_dt.getUTCFullYear();
 
-    /* Set the width of the sidebar to 120px */
-    .sidebar 
-    {
-      width: 120px;
-      background: #2c3531;
-    }
+            //now calculate the age of the user  
+            var age = Math.abs(year - 1970);
 
-    table 
-    {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
+            document.getElementById("name").innerHTML = document.getElementById("in-name").value;
+            document.getElementById("email").innerHTML = document.getElementById("in-email").value;
+            document.getElementById("bday").innerHTML = document.getElementById("in-bday").value;
+            //display the calculated age  
+            document.getElementById("age").innerHTML = age;
+        }
+    </script>
 
-    td, th 
-    {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
-
-    tr:nth-child(even) 
-    {
-      background-color: #dddddd;
-    }
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-  </style>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif
+        }
+        
+        .row-padding img {
+            margin-bottom: 12px
+        }
+        /* Set the width of the sidebar to 120px */
+        
+        .sidebar {
+            width: 120px;
+            background: #2c3531;
+        }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        /* Remove margins from "page content" on small screens */
+        
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0
+            }
+        }
+    </style>
 </head>
+
 <body class="black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="sidebar bar-block small hide-small center">
-  <img src="resources/images/boy.jpg" style="width:100%">
-  <a href="index.html" class="bar-item button padding-large hover-black">
-    <i class="fa fa-arrow-left xxlarge"></i>
-    <p>BACK</p>
-  </a>
-  <a href="1.html" class="bar-item button padding-large hover-black">
-    <i class="fa fa-eye xxlarge"></i>
-    <p>PHOTOGRAPHY</p>
-  </a>
-  <a href="photographer.html" class="bar-item button padding-large hover-black">
-    <i class="fa fa-address-card xxlarge"></i>
-    <p>CV</p>
-  </a>
-  <a href="https://www.linkedin.com/in/deelaka-wejith-kariyawasam-7a9bb0213/" class="bar-item button padding-large hover-black">
-    <i class="fa fa-linkedin xxlarge" aria-hidden="true"></i>
-    <p>LinkedIn</p>
-  </a>
-</nav>
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="sidebar bar-block small hide-small center">
+        <img src="resources/images/boy.jpg" style="width:100%">
+        <a href="index.html" class="bar-item button padding-large hover-black">
+            <i class="fa fa-arrow-left xxlarge"></i>
+            <p>BACK</p>
+        </a>
+        <a href="1.html" class="bar-item button padding-large hover-black">
+            <i class="fa fa-eye xxlarge"></i>
+            <p>PHOTOGRAPHY</p>
+        </a>
+        <a href="photographer.html" class="bar-item button padding-large hover-black">
+            <i class="fa fa-address-card xxlarge"></i>
+            <p>CV</p>
+        </a>
+        <a href="https://www.linkedin.com/in/deelaka-wejith-kariyawasam-7a9bb0213/" class="bar-item button padding-large hover-black">
+            <i class="fa fa-linkedin xxlarge" aria-hidden="true"></i>
+            <p>LinkedIn</p>
+        </a>
+    </nav>
 
-<!-- Page Content -->
-<div class="padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="container padding-32 center black" id="home">
-    <h1 class="jumbo">Survey</h1>
-    <p><i>We're going to make a small survey about you!</i></p>
-  </header>
+    <!-- Page Content -->
+    <div class="padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="container padding-32 center black" id="home">
+            <h1 class="jumbo">Survey</h1>
+            <p><i>We're going to make a small survey about you!</i></p>
+        </header>
 
-  <!-- form Section -->
-  <div class="padding-64 content text-grey" id="contact">
-    <p>Please enter you all details ask below.</p>
+        <!-- form Section -->
+        <div class="padding-64 content text-grey" id="contact">
+            <p>Please enter you all details ask below.</p>
 
-    
-    <p><input class="input padding-16" type="text" placeholder="Name"  id="in-name"></p>
-    <p><input class="input padding-16" type="text" placeholder="Email"  id="in-email"></p>
-    <p><input class="input padding-16" type="date" placeholder="Birthday(YYYY-MM-DD)"  id="in-bday"></p>
-    <p><input class="input padding-16" type="text" placeholder="Feedback"></p>
-    <p>
-      <button class="button light-grey padding-large" onclick="display()">
+
+            <p><input class="input padding-16" type="text" placeholder="Name" id="in-name"></p>
+            <p><input class="input padding-16" type="text" placeholder="Email" id="in-email"></p>
+            <p><input class="input padding-16" type="date" placeholder="Birthday(YYYY-MM-DD)" id="in-bday"></p>
+            <p><input class="input padding-16" type="text" placeholder="Feedback"></p>
+            <p>
+                <button class="button light-grey padding-large" onclick="display()">
         <i class="fa fa-paper-plane"></i> END SURVEY
       </button>
-    </p>
-    
-  <!-- End Contact Section -->
-  </div class="container padding-32 center black">
-      
-      <table id="detail_table">
-        <tr>
-          <th>Name</th>
-          <th>Birthday</th>
-          <th>Age</th>
-          <th>Email</th>
-        </tr>
-        <tr>
-          <td><p id="name">Name</p></td>
-          <td><p id="bday">Birthday</p></td>
-          <td><p id="age">Age</p></td>
-          <td><p id="email">E-mail</p></td>
-        </tr>
-  </table>
-  <div>
-    
-  </div>
-  
-    <!-- Footer -->
-  <footer class="content padding-64 text-grey xlarge">
-    <a href="https://www.facebook.com/deelaka.kariyawasam"><i class="fa fa-facebook-official hover-opacity"></i></a>
-    <a href="https://www.instagram.com/deelaka_m_p/"><i class="fa fa-instagram hover-opacity"></i></a>
-    <a href="https://www.instagram.com/deelaka_m_p/"><i class="fa fa-snapchat hover-opacity"></i></a>
-    <a href="https://www.pinterest.com/deelakasmobilephotography/"><i class="fa fa-pinterest-p hover-opacity"></i></a>
-    <a href="https://twitter.com/DeelakaWejith"><i class="fa fa-twitter hover-opacity"></i></a>
-    <a href="https://www.youtube.com/channel/UCudiMa7RXmvNij8vNmY3cug"><i class="fa fa-youtube hover-opacity"></i></a>
-    <p class="medium">Copyright ©Deelaka Wejith Kariyawasam 2021. All Rights Reserved</p>
-  <!-- End footer -->
-  </footer>
+            </p>
 
-<!-- END PAGE CONTENT -->
-</div>
+            <!-- End Contact Section -->
+        </div class="container padding-32 center black">
+
+        <table id="detail_table">
+            <tr>
+                <th>Name</th>
+                <th>Birthday</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>
+                    <p id="name">Name</p>
+                </td>
+                <td>
+                    <p id="bday">Birthday</p>
+                </td>
+                <td>
+                    <p id="age">Age</p>
+                </td>
+                <td>
+                    <p id="email">E-mail</p>
+                </td>
+            </tr>
+        </table>
+        <div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="content padding-64 text-grey xlarge">
+            <a href="https://www.facebook.com/deelaka.kariyawasam" target="_blank"><i class="fa fa-facebook-official hover-opacity"></i></a>
+            <a href="https://www.instagram.com/deelaka_m_p/" target="_blank"><i class="fa fa-instagram hover-opacity"></i></a>
+            <a href="https://www.instagram.com/deelaka_m_p/" target="_blank"><i class="fa fa-snapchat hover-opacity"></i></a>
+            <a href="https://www.pinterest.com/deelakasmobilephotography/" target="_blank"><i class="fa fa-pinterest-p hover-opacity"></i></a>
+            <a href="https://twitter.com/DeelakaWejith" target="_blank"><i class="fa fa-twitter hover-opacity"></i></a>
+            <a href="https://www.youtube.com/channel/UCudiMa7RXmvNij8vNmY3cug" target="_blank"><i class="fa fa-youtube hover-opacity"></i></a>
+            <p class="medium">Copyright ©Deelaka Wejith Kariyawasam 2021. All Rights Reserved</p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
 
 </body>
+
 </html>
